@@ -49,4 +49,10 @@ void config_verification();
 void config_backlight();
 void config_auto_hos_poweroff();
 
+
+void reboot_rcm();
+void reboot_normal();
+void power_off();
+
+
 #endif /* _CONFIG_H_ */
