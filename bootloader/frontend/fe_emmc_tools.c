@@ -72,6 +72,7 @@ extern void emmcsn_path_impl(char *path, char *sub_dir, char *filename, sdmmc_st
 void update_filename_first(char *outFilename, u32 *sdPathLenPrt, u32 numSplitParts, u32 fileNumber);
 void update_filename(char *outFilename, u32 sdPathLen, u32 numSplitParts, u32 fileNumber);
 
+#if ENABLE_VERIFICATION || VERIFY_RESTORE || VERIFY_RESTORE_SPLIT
 static int _dump_emmc_verify(sdmmc_storage_t *storage, u32 lba_curr, char *outFilename, emmc_part_t *part)
 {
 	FIL fp;
@@ -188,7 +189,7 @@ static int _dump_emmc_verify(sdmmc_storage_t *storage, u32 lba_curr, char *outFi
 		return 1;
 	}
 }
-
+#endif
 static int _dump_emmc_part(char *sd_path, sdmmc_storage_t *storage, emmc_part_t *part)
 {
 	static const u32 FAT32_FILESIZE_LIMIT = 0xFFFFFFFF;
