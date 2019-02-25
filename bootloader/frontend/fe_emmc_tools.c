@@ -809,7 +809,6 @@ static int _restore_emmc_part(char *sd_path, sdmmc_storage_t *storage, emmc_part
 	u32 lba_curr = part->lba_start;
 	u32 bytesWritten = 0;
 	u32 prevPct = 200;
-	int retryCount = 0;
 
 	u32 num = 0;
 	u32 pct = 0;
@@ -818,7 +817,7 @@ static int _restore_emmc_part(char *sd_path, sdmmc_storage_t *storage, emmc_part
 	while (totalSectors > 0)
 	{
 		// If we have more than one part, check the size for the split parts and make sure that the bytes written is not more than that.
-		if (numSplitParts != 0 && bytesWritten >= multipartSplitSize)
+		if (numSplitParts != 0 && bytesWritten >= fileSize)
 		{
 			// If we have more bytes written then close the file pointer and increase the part index we are using
 			f_close(&fp);
@@ -858,6 +857,7 @@ static int _restore_emmc_part(char *sd_path, sdmmc_storage_t *storage, emmc_part
 				free(buf);
 				return 0;
 			}
+			fileSize = (u64)f_size(&fp);
 			bytesWritten = 0;
 		}
 
