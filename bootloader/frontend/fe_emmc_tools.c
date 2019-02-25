@@ -67,7 +67,7 @@ extern void emmcsn_path_impl(char *path, char *sub_dir, char *filename, sdmmc_st
 // Will enable the restore to verify from split versions
 #define VERIFY_RESTORE_SPLIT false
 
-#define RESTORE_WAIT_PERIOD 0
+#define RESTORE_WAIT_PERIOD 10
 
 void update_filename_first(char *outFilename, u32 *sdPathLenPrt, u32 numSplitParts, u32 fileNumber);
 void update_filename(char *outFilename, u32 sdPathLen, u32 numSplitParts, u32 fileNumber);
