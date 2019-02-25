@@ -2,3 +2,8 @@
 .vscode
 build/*
 output/*
+*.sdf
+*.suo
+Thumbs.db
+*.opensdf
+*.*~
