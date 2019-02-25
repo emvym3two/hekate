@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77C13CF7-F2D8-4CA7-90B9-3C18FA697D28}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make clean all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bootloader\config\config.c" />
+    <ClCompile Include="bootloader\config\ini.c" />
+    <ClCompile Include="bootloader\frontend\fe_emmc_tools.c" />
+    <ClCompile Include="bootloader\frontend\fe_info.c" />
+    <ClCompile Include="bootloader\frontend\fe_tools.c" />
+    <ClCompile Include="bootloader\gfx\di.c" />
+    <ClCompile Include="bootloader\gfx\gfx.c" />
+    <ClCompile Include="bootloader\gfx\tui.c" />
+    <ClCompile Include="bootloader\hos\hos.c" />
+    <ClCompile Include="bootloader\hos\hos_config.c" />
+    <ClCompile Include="bootloader\hos\pkg1.c" />
+    <ClCompile Include="bootloader\hos\pkg2.c" />
+    <ClCompile Include="bootloader\hos\secmon_exo.c" />
+    <ClCompile Include="bootloader\ianos\ianos.c" />
+    <ClCompile Include="bootloader\libs\compr\blz.c" />
+    <ClCompile Include="bootloader\libs\compr\lz.c" />
+    <ClCompile Include="bootloader\libs\elfload\elfload.c" />
+    <ClCompile Include="bootloader\libs\elfload\elfreloc_aarch64.c" />
+    <ClCompile Include="bootloader\libs\elfload\elfreloc_arm.c" />
+    <ClCompile Include="bootloader\libs\fatfs\diskio.c" />
+    <ClCompile Include="bootloader\libs\fatfs\ff.c" />
+    <ClCompile Include="bootloader\libs\fatfs\ffsystem.c" />
+    <ClCompile Include="bootloader\libs\fatfs\ffunicode.c" />
+    <ClCompile Include="bootloader\main.c" />
+    <ClCompile Include="bootloader\mem\heap.c" />
+    <ClCompile Include="bootloader\mem\mc.c" />
+    <ClCompile Include="bootloader\mem\sdram.c" />
+    <ClCompile Include="bootloader\mem\sdram_lp0.c" />
+    <ClCompile Include="bootloader\power\bq24193.c" />
+    <ClCompile Include="bootloader\power\max17050.c" />
+    <ClCompile Include="bootloader\power\max7762x.c" />
+    <ClCompile Include="bootloader\rtc\max77620-rtc.c" />
+    <ClCompile Include="bootloader\sec\se.c" />
+    <ClCompile Include="bootloader\sec\tsec.c" />
+    <ClCompile Include="bootloader\soc\clock.c" />
+    <ClCompile Include="bootloader\soc\cluster.c" />
+    <ClCompile Include="bootloader\soc\fuse.c" />
+    <ClCompile Include="bootloader\soc\gpio.c" />
+    <ClCompile Include="bootloader\soc\hw_init.c" />
+    <ClCompile Include="bootloader\soc\i2c.c" />
+    <ClCompile Include="bootloader\soc\kfuse.c" />
+    <ClCompile Include="bootloader\soc\pinmux.c" />
+    <ClCompile Include="bootloader\soc\smmu.c" />
+    <ClCompile Include="bootloader\soc\uart.c" />
+    <ClCompile Include="bootloader\storage\nx_emmc.c" />
+    <ClCompile Include="bootloader\storage\sdmmc.c" />
+    <ClCompile Include="bootloader\storage\sdmmc_driver.c" />
+    <ClCompile Include="bootloader\utils\btn.c" />
+    <ClCompile Include="bootloader\utils\dirlist.c" />
+    <ClCompile Include="bootloader\utils\util.c" />
+    <ClCompile Include="modules\hekate_libsys_lp0\sys_sdramlp0.c" />
+    <ClCompile Include="modules\hekate_libsys_minerva\sys_sdrammtc.c" />
+    <ClCompile Include="modules\simple_sample\gfx\gfx.c" />
+    <ClCompile Include="modules\simple_sample\module_sample.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootloader\gfx\di.inl" />
+    <None Include="bootloader\mem\sdram_config.inl" />
+    <None Include="bootloader\mem\sdram_config_lz.inl" />
+    <None Include="tools\emc.def" />
+    <None Include="tools\mc.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bootloader\config\config.h" />
+    <ClInclude Include="bootloader\config\ini.h" />
+    <ClInclude Include="bootloader\frontend\fe_emmc_tools.h" />
+    <ClInclude Include="bootloader\frontend\fe_info.h" />
+    <ClInclude Include="bootloader\frontend\fe_tools.h" />
+    <ClInclude Include="bootloader\gfx\di.h" />
+    <ClInclude Include="bootloader\gfx\gfx.h" />
+    <ClInclude Include="bootloader\gfx\logos.h" />
+    <ClInclude Include="bootloader\gfx\tui.h" />
+    <ClInclude Include="bootloader\hos\hos.h" />
+    <ClInclude Include="bootloader\hos\hos_config.h" />
+    <ClInclude Include="bootloader\hos\pkg1.h" />
+    <ClInclude Include="bootloader\hos\pkg2.h" />
+    <ClInclude Include="bootloader\hos\secmon_exo.h" />
+    <ClInclude Include="bootloader\ianos\ianos.h" />
+    <ClInclude Include="bootloader\libs\compr\blz.h" />
+    <ClInclude Include="bootloader\libs\compr\lz.h" />
+    <ClInclude Include="bootloader\libs\elfload\elf.h" />
+    <ClInclude Include="bootloader\libs\elfload\elfarch.h" />
+    <ClInclude Include="bootloader\libs\elfload\elfload.h" />
+    <ClInclude Include="bootloader\libs\fatfs\diskio.h" />
+    <ClInclude Include="bootloader\libs\fatfs\ff.h" />
+    <ClInclude Include="bootloader\libs\fatfs\ffconf.h" />
+    <ClInclude Include="bootloader\mem\emc.h" />
+    <ClInclude Include="bootloader\mem\heap.h" />
+    <ClInclude Include="bootloader\mem\mc.h" />
+    <ClInclude Include="bootloader\mem\mc_t210.h" />
+    <ClInclude Include="bootloader\mem\sdram.h" />
+    <ClInclude Include="bootloader\mem\sdram_lp0_param_t210.h" />
+    <ClInclude Include="bootloader\mem\sdram_param_t210.h" />
+    <ClInclude Include="bootloader\power\bq24193.h" />
+    <ClInclude Include="bootloader\power\max17050.h" />
+    <ClInclude Include="bootloader\power\max77620.h" />
+    <ClInclude Include="bootloader\power\max7762x.h" />
+    <ClInclude Include="bootloader\rtc\max77620-rtc.h" />
+    <ClInclude Include="bootloader\sec\se.h" />
+    <ClInclude Include="bootloader\sec\se_t210.h" />
+    <ClInclude Include="bootloader\sec\tsec.h" />
+    <ClInclude Include="bootloader\sec\tsec_t210.h" />
+    <ClInclude Include="bootloader\soc\clock.h" />
+    <ClInclude Include="bootloader\soc\cluster.h" />
+    <ClInclude Include="bootloader\soc\fuse.h" />
+    <ClInclude Include="bootloader\soc\gpio.h" />
+    <ClInclude Include="bootloader\soc\hw_init.h" />
+    <ClInclude Include="bootloader\soc\i2c.h" />
+    <ClInclude Include="bootloader\soc\kfuse.h" />
+    <ClInclude Include="bootloader\soc\pinmux.h" />
+    <ClInclude Include="bootloader\soc\pmc.h" />
+    <ClInclude Include="bootloader\soc\pmc_lp0_t210.h" />
+    <ClInclude Include="bootloader\soc\smmu.h" />
+    <ClInclude Include="bootloader\soc\t210.h" />
+    <ClInclude Include="bootloader\soc\uart.h" />
+    <ClInclude Include="bootloader\storage\mmc.h" />
+    <ClInclude Include="bootloader\storage\nx_emmc.h" />
+    <ClInclude Include="bootloader\storage\sd.h" />
+    <ClInclude Include="bootloader\storage\sdmmc.h" />
+    <ClInclude Include="bootloader\storage\sdmmc_driver.h" />
+    <ClInclude Include="bootloader\storage\sdmmc_t210.h" />
+    <ClInclude Include="bootloader\utils\aarch64_util.h" />
+    <ClInclude Include="bootloader\utils\btn.h" />
+    <ClInclude Include="bootloader\utils\dirlist.h" />
+    <ClInclude Include="bootloader\utils\list.h" />
+    <ClInclude Include="bootloader\utils\types.h" />
+    <ClInclude Include="bootloader\utils\util.h" />
+    <ClInclude Include="common\common_gfx.h" />
+    <ClInclude Include="common\common_heap.h" />
+    <ClInclude Include="common\common_module.h" />
+    <ClInclude Include="modules\hekate_libsys_lp0\pmc_lp0_t210.h" />
+    <ClInclude Include="modules\hekate_libsys_lp0\sdram_lp0_param_t210.h" />
+    <ClInclude Include="modules\hekate_libsys_lp0\t210.h" />
+    <ClInclude Include="modules\hekate_libsys_lp0\types.h" />
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc.h" />
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_mc_emc_regs.h" />
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_switch_tables.h" />
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_table.h" />
+    <ClInclude Include="modules\hekate_libsys_minerva\types.h" />
+    <ClInclude Include="modules\simple_sample\gfx\gfx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

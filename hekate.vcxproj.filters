@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bootloader\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\config\config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\config\ini.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\frontend\fe_emmc_tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\frontend\fe_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\frontend\fe_tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\gfx\di.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\gfx\gfx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\gfx\tui.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\hos\hos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\hos\hos_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\hos\pkg1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\hos\pkg2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\hos\secmon_exo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\ianos\ianos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\compr\blz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\compr\lz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\elfload\elfload.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\elfload\elfreloc_aarch64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\elfload\elfreloc_arm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\fatfs\diskio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\fatfs\ff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\fatfs\ffsystem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\libs\fatfs\ffunicode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\mem\heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\mem\mc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\mem\sdram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\mem\sdram_lp0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\power\bq24193.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\power\max17050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\power\max7762x.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\rtc\max77620-rtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\sec\se.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\sec\tsec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\cluster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\fuse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\gpio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\hw_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\i2c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\kfuse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\pinmux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\smmu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\soc\uart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\storage\nx_emmc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\storage\sdmmc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\storage\sdmmc_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\utils\btn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\utils\dirlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bootloader\utils\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\hekate_libsys_lp0\sys_sdramlp0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\hekate_libsys_minerva\sys_sdrammtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\simple_sample\module_sample.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\simple_sample\gfx\gfx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tools\emc.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="tools\mc.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="bootloader\gfx\di.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="bootloader\mem\sdram_config.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="bootloader\mem\sdram_config_lz.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bootloader\config\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\config\ini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\frontend\fe_emmc_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\frontend\fe_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\frontend\fe_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\gfx\di.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\gfx\gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\gfx\logos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\gfx\tui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\hos\hos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\hos\hos_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\hos\pkg1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\hos\pkg2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\hos\secmon_exo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\ianos\ianos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\compr\blz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\compr\lz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\elfload\elf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\elfload\elfarch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\elfload\elfload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\fatfs\diskio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\fatfs\ff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\libs\fatfs\ffconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\emc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\mc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\mc_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\sdram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\sdram_lp0_param_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\mem\sdram_param_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\power\bq24193.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\power\max17050.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\power\max77620.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\power\max7762x.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\rtc\max77620-rtc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\sec\se.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\sec\se_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\sec\tsec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\sec\tsec_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\clock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\cluster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\fuse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\gpio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\hw_init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\i2c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\kfuse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\pinmux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\pmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\pmc_lp0_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\smmu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\soc\uart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\mmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\nx_emmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\sd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\sdmmc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\sdmmc_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\storage\sdmmc_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\aarch64_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\btn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\dirlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bootloader\utils\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common_gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common_heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common_module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_lp0\pmc_lp0_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_lp0\sdram_lp0_param_t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_lp0\t210.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_lp0\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_mc_emc_regs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_switch_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_minerva\mtc_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\hekate_libsys_minerva\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\simple_sample\gfx\gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
